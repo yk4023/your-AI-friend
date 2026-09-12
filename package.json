@@ -1,0 +1,65 @@
+{
+  "name": "xiaoya-framework",
+  "version": "0.3.0",
+  "description": "Local-first, permission-gated cognitive agent framework with pluggable providers and bounded self-evolution.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "Xiaoya contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yk4023/your-AI-friend.git"
+  },
+  "homepage": "https://github.com/yk4023/your-AI-friend",
+  "bugs": {
+    "url": "https://github.com/yk4023/your-AI-friend/issues"
+  },
+  "keywords": [
+    "agent",
+    "local-first",
+    "permissions",
+    "memory",
+    "skills",
+    "llm",
+    "xiaoya"
+  ],
+  "engines": { "node": ">=20" },
+  "files": [
+    "agents",
+    "core",
+    "demo",
+    "docs",
+    "eval/xiaoya_bench/bench.mjs",
+    "eval/xiaoya_bench/README.md",
+    "gateways",
+    "providers",
+    "skills",
+    "tests",
+    "ui",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "GOVERNANCE.md",
+    "CITATION.cff",
+    ".editorconfig",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "THIRD_PARTY_NOTICES.md",
+    "scripts"
+  ],
+  "exports": {
+    ".": "./core/index.mjs",
+    "./skills": "./skills/runtime/index.mjs",
+    "./providers/llm": "./providers/llm/interface.mjs",
+    "./providers/tts": "./providers/tts/interface.mjs",
+    "./providers/stt": "./providers/stt/interface.mjs",
+    "./providers/avatar": "./providers/avatar/interface.mjs"
+  },
+  "scripts": {
+    "test": "node tests/framework-smoke.mjs",
+    "bench": "node eval/xiaoya_bench/bench.mjs",
+    "release-check": "node scripts/release-check.mjs",
+    "package-manifest": "node scripts/package-manifest.mjs",
+    "check": "npm test && npm run bench && npm run release-check && npm run package-manifest"
+  }
+}

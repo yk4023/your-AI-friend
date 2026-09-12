@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.gguf
+*.safetensors
+*.pth
+data/private/
+data/memory/
+/runtime/
+logs/

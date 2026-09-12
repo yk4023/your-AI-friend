@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "Xiaoya Framework"
+message: "If this framework helps your work, please cite the repository."
+type: software
+license: Apache-2.0
+version: 0.3.0
+repository-code: "https://github.com/yk4023/your-AI-friend"
+url: "https://github.com/yk4023/your-AI-friend"
+authors:
+  - name: "Xiaoya contributors"

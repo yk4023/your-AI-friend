@@ -1,0 +1,20 @@
+name: Feature request
+description: Propose a focused, privacy-preserving improvement
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Features must preserve explicit permissions, auditability and local-first defaults.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed design
+    validations:
+      required: true
